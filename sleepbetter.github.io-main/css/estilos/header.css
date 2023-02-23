@@ -1,0 +1,183 @@
+.promocao {
+  background: #d5e5f2;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.promocao span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-left: 96px;
+  color: #1b65a6;
+}
+
+.promocao ion-icon {
+  font-size: 1.75rem;
+  cursor: pointer;
+  justify-self: right;
+  margin-right: 70px;
+}
+
+.menu .menu-media {
+  display: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 330px 1fr 100px;
+  align-items: center;
+  padding: 30px 50px;
+  box-shadow: 0px 4px 14px #00000024;
+  color: #1b65a6;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu span {
+  font-size: 2rem;
+}
+
+.menu span span {
+  font-weight: 800;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+}
+
+.menu ul li a {
+  color: #3c5061;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 30px 0;
+}
+
+.menu ul li a:hover {
+  color: #1b65a6;
+}
+
+.menu .cart {
+  font-size: 2rem;
+  border-left: 50px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.menu .cart:hover {
+  color: #77b3d9;
+}
+
+@media (max-width: 1150px) {
+  .menu ul li a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  .menu ul li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menu span {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .menu nav {
+    display: none;
+  }
+  .menu .menu-media {
+    display: block;
+    grid-column: 1;
+    border: none;
+    background: transparent;
+    grid-row: 1;
+    font-size: 2rem;
+    text-align: left;
+    color: #1b65a6;
+  }
+  .menu .cart {
+    display: flex;
+    justify-self: right;
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .promocao {
+    padding: 15px 0;
+  }
+  .promocao span {
+    font-size: 0.9rem;
+    padding-left: 66px;
+  }
+  .promocao ion-icon {
+    margin-right: 20px;
+  }
+  .menu span {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .promocao span {
+    font-size: 0.8rem;
+    padding-left: 46px;
+  }
+  .menu span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .promocao span {
+    font-size: 0.8rem;
+    padding-left: 26px;
+  }
+  .promocao ion-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .menu span {
+    font-size: 1.25rem;
+  }
+  .menu .menu-media {
+    font-size: 1.5rem;
+  }
+  .menu .cart {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .promocao span {
+    font-size: 0.9rem;
+  }
+}
